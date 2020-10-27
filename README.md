@@ -24,6 +24,8 @@ Navigate to your protobuf directory/java ```/Downloads/protobuf-3.13.0/java```
 
 Run: ``` mvn install ```
 
+![alt text](https://imgur.com/KyxYcyk.png)
+
 If this compiles succesefully it means everything works and the project can be compiled.
 
 ## 4. Compile the Project
