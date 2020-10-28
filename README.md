@@ -33,3 +33,10 @@ Pull the project, navigate to the directory where pom.xml and run:
 ```mvn clean install```
 
 ![alt text](https://imgur.com/ZIHruMN.png)
+
+## BUGS: 
+Connects but RPC fails
+
+```mvn -e compile exec:java -Dexec.mainClass=dominect.userreg.UserRegistration```
+
+![alt text](https://imgur.com/4YvIyQN.png)
