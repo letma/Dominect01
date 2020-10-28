@@ -3,7 +3,7 @@
 // Date: 26.10.2020
 syntax = "proto3";
 option java_multiple_files = true;
-package com.example.grpc.services;
+package dom;
 
 // -----------------------------------------
 // Dominect network protocol implementation
@@ -19,6 +19,15 @@ message UserInfo {
 // User Registration expected message from server?
 message UserRegFeed{
     string greeting = 1;
+}
+
+message GetToken {
+    string matrNr = 1;
+    string secret = 2;
+}
+
+message GetTokenResponse{
+    string token = 1;
 }
 // The GameParameter packet defines the board of m x n fields (width x height).
 
@@ -56,4 +65,8 @@ message GameState {
 
 service UserRegistration{
     rpc UserRegistration (UserInfo) returns (UserRegFeed);
+}
+
+service GetUserToken{
+    rpc GetUserToken (GetToken) returns (GetTokenResponse);
 }
